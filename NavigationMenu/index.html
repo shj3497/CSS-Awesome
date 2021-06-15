@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="inner-width">
+      <h1>Menu</h1>
+      <div class="menu-icon">
+        <i class="fas fa-align-right"></i>
+      </div>
+    </header>
+
+    <div class="navigation-menu">
+      <nav>
+        <li><a href="javascript:void(0);">Home</a></li>
+        <li><a href="javascript:void(0);">About</a></li>
+        <li><a href="javascript:void(0);">Services</a></li>
+        <li><a href="javascript:void(0);">Works</a></li>
+        <li><a href="javascript:void(0);">Contact</a></li>
+      </nav>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus massa
+      leo, laoreet id gravida sed, molestie congue arcu. Maecenas vitae feugiat
+      mauris. Aliquam accumsan metus eu purus rhoncus, vitae lacinia erat
+      finibus. Sed ac augue neque. Curabitur dapibus arcu a urna condimentum
+      vehicula. Donec nulla velit, rutrum a risus ac, molestie ultricies justo.
+      Duis enim libero, tincidunt dapibus feugiat a, tincidunt et orci. Proin
+      sit amet lectus sed ipsum tempor pellentesque. Phasellus vestibulum
+      vestibulum felis vel gravida. Duis luctus tortor nisi. Pellentesque
+      habitant morbi tristique senectus et netus et malesuada fames ac turpis
+      egestas. Sed magna felis, tincidunt eget erat sed, ullamcorper auctor
+      ipsum. Donec porta euismod maximus. Maecenas sed augue lectus. Morbi
+      laoreet nisi ut rutrum lacinia. Vivamus posuere bibendum purus in
+      interdum. Nam interdum magna et finibus gravida. Sed lacinia tellus
+      tincidunt magna consequat sagittis sed eget lectus. Donec eget urna
+      ligula. Sed consequat non tellus non viverra. Aenean at urna luctus,
+      rutrum ex vel, feugiat urna. Nullam id tortor id dolor efficitur
+      scelerisque. Curabitur vel cursus erat. Nulla sit amet sem sodales, auctor
+      ex nec, maximus arcu. Aenean tristique viverra arcu, ac commodo felis
+      aliquet non. Nulla facilisi. Integer ornare pulvinar erat a accumsan. Duis
+      at massa in velit pretium volutpat. Vestibulum ante ipsum primis in
+      faucibus orci luctus et ultrices posuere cubilia curae; Nullam non leo
+      tempor sem molestie ultricies. Pellentesque ultricies consectetur velit in
+      dictum. Duis nec justo in justo tempus tincidunt sit amet at nulla.
+      Integer eu mattis quam. Donec imperdiet eros felis. Quisque magna magna,
+      sagittis quis ornare non, pellentesque nec enim. Fusce erat dolor,
+      tincidunt vitae pellentesque nec, fringilla ac felis. Duis a molestie
+      neque. Ut quis tempor augue. Vestibulum sit amet erat id magna efficitur
+      lacinia a et eros. Aliquam mauris felis, rutrum at elit quis, placerat
+      faucibus libero. Fusce vitae dui eu sem condimentum ultricies a quis
+      lorem. Vivamus at mi ac erat eleifend rutrum. Donec cursus dictum orci.
+      Nulla ligula nunc, tincidunt vel tellus vitae, blandit porttitor lorem.
+      Nam maximus ipsum ut nisi pellentesque iaculis. Integer imperdiet ligula
+      sed vulputate porta. Vestibulum bibendum sagittis purus ut pellentesque.
+      Phasellus sed mattis justo. Sed rhoncus vel dolor vitae auctor. Nam sit
+      amet turpis libero. Sed rhoncus lacinia est id vulputate. Nulla luctus
+      dapibus diam, in vehicula elit rutrum a. Mauris efficitur lacinia libero,
+      vel tristique turpis sollicitudin ac. Mauris fringilla metus non lectus
+      hendrerit mattis. Praesent a mollis ligula. Curabitur efficitur sodales
+      lectus. Curabitur elementum vitae urna non fringilla. Pellentesque nulla
+      nisi, feugiat quis sapien id, bibendum mattis magna. Proin mauris risus,
+      sagittis a tristique sed, vestibulum eget dolor.
+    </p>
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      menuIcon.addEventListener("click", () => {
+        menuIcon.classList.toggle("active");
+        const navMenu = document.querySelector(".navigation-menu");
+        navMenu.classList.toggle("active");
+        const menuIcon_i = menuIcon.querySelector("i");
+        menuIcon_i.classList.toggle("fa-times");
+      });
+    </script>
+  </body>
+</html>
