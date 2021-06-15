@@ -1,4 +1,4 @@
-## Acoordion Menu
+## AcoordionMenu
 
 참고사이트 : [DarkCode](https://www.youtube.com/watch?v=VouC2jFSs2c)
 
