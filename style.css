@@ -20,14 +20,15 @@ a:hover {
 }
 
 .container {
-  height: 100vh;
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .project {
   margin: 10px;
   text-align: center;
+  height: 100%;
 }
 
 .project__img img {
