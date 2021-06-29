@@ -1,5 +1,7 @@
 # Drag & Drop File Upload
 
+참고 사이트 : [CodingNepal](https://www.youtube.com/watch?v=0HCiH4Tk04I)
+
 ### Awesome
 
 drag event에 대해서도 처음 알아보았고, FileReader()라는 API도 처음 사용해보았다.
