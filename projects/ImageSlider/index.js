@@ -12,22 +12,25 @@ const size = carouselImages[0].clientWidth;
 
 carouselSlide.style.transform = `translateX(${-size * counter}px)`
 
-nextBtn.addEventListener('click', () => {
+const nextImageSlide = () => {
   if(counter >= carouselImages.length -1) return;
   carouselSlide.style.transition = `transform 300ms ease-in-out`;
   counter++;
   carouselSlide.style.transform = `translateX(${-size * counter}px)`
-})
+}
 
-prevBtn.addEventListener('click', () => {
+const prevImageSlide = () => {
   if(counter <= 0) return;
   carouselSlide.style.transition = `transform 300ms ease-in-out`;
   counter--;
   carouselSlide.style.transform = `translateX(${-size * counter}px)`
-})
+}
+
+nextBtn.addEventListener('click', nextImageSlide)
+
+prevBtn.addEventListener('click', prevImageSlide)
 
 carouselSlide.addEventListener('transitionend', () => {
-  console.log('이미지 이동!')
   if(carouselImages[counter].id === 'lastClone'){
     carouselSlide.style.transition = 'none'
     counter = carouselImages.length -2;
